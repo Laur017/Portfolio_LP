@@ -1,17 +1,15 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
-import Project1 from './1stProject/Project1'
+import Project1 from './components/1stProject/Project1'
+import Home from './components/Home/Home'
 
 function App() {
-  const navigate = useNavigate()
 
   return (
    <div className="main-page">
-      <h1>LP Portfolio</h1>
-      <button onClick={navigate('/project1')}>1st Project</button>
-
+      <Home />
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/project1' element={<Project1 />} />
       </Routes>
    </div>
