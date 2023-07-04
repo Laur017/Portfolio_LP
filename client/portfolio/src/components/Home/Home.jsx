@@ -1,10 +1,11 @@
-import Project1 from '../1stProject/Project1'
+import {useNavigate} from 'react-router-dom'
 
 export default function Home() {
+  const navigate = useNavigate()
   return (
-    <div>
+    <div className='home-div'>
         <h1>LP Portfolio</h1>
-        <Project1/>
+        <button onClick={() => navigate('/projects')}>Projects</button>
     </div>
   )
 }
