@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@300;400;600&display=swap');
 
 :root {
-  --light-bg-color: #eff9da;
-  --light-text-color: #232323;
   --transparent-color: rgba(0,0,0,0);
+}
+
+[data-theme="light"] {
+  --bg-color: #eff9da;
+  --text-color: #232323;
+  transition: all 0.3s ease-in;
+}
+
+[data-theme="dark"] {
+  transition: all 0.3s ease-in;
+  --bg-color:#232323;
+  --text-color:#eff9da;
 }
 
 body{
@@ -14,8 +24,9 @@ body{
   align-items: center;
   /* justify-content: center; */
   height: 100vh;
-  background-color: var(--light-bg-color);
-  color: var(--light-text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Lexend Peta', sans-serif;
 }
 
 .main-page{
@@ -29,9 +40,26 @@ body{
 * Navbar Page
 */
 
+nav{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav > img{
   cursor: pointer;
-  width: 5rem;
+  
+}
+
+nav > img:nth-child(1) {
+  width: 3rem;
+  padding: 1rem;
+}
+
+nav > img:nth-child(2) {
+  width: 2rem;
+  margin-right: 2rem;
 }
 
 /*
@@ -47,10 +75,10 @@ nav > img{
 }
 
 .home-div > button, .projects-div > button{
-  color: var(--light-text-color);
+  color: var(--text-color);
   font-family: 'Lexend Peta', sans-serif;
   background-color: var(--transparent-color);
-  border: 1px solid var(--light-text-color);
+  border: 1px solid var(--text-color);
   padding: 1rem;
   border-radius: 1rem 0;
   cursor: pointer;
@@ -59,8 +87,8 @@ nav > img{
 
 .home-div > button:hover, .projects-div > button:hover{
   transition: all 0.3s ease-in;
-  background-color: var(--light-text-color);
-  color: var(--light-bg-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 /*
