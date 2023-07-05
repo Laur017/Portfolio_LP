@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div className='projects-div'>
         <button onClick={()=> navigate('/project1')}>Project 1</button>
-        <button>Project 2</button>
+        <button onClick={()=> navigate('/project2')}>Project 2</button>
         <button>Project 3</button>
         <button>Project 4</button>
     </div>
