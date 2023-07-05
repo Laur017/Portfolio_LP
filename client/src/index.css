@@ -371,3 +371,58 @@ nav > img:nth-child(2) {
 .planet-nav > button:hover {
   color: white;
 }
+
+/*
+* Crew Project 2
+*/
+
+.pr2-crew {
+  display: flex;
+  /* align-items: flex-end; */
+  /* background-color: red; */
+  /* height: 80%; */
+  padding: 1rem;
+  margin-top: 4rem;
+  width: 90%;
+  margin-inline: auto;
+  align-items: center;
+}
+
+.pr2-crew > img {
+  width: 20rem;
+
+}
+.pr2-crew-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+
+.pr2-crew-context > h3 {
+  color: gray;
+}
+
+.pr2-crew-context > h1 {
+  font-size: 2.2rem;
+}
+
+.pr2-crew-context > p {
+  color: #D0D6F9;
+}
+
+.pr2-crew-text input[type="radio"] {
+  -webkit-appearance : none;
+  appearance         : none;
+  width: 1em;
+  height: 1em;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.pr2-crew-text input[type="radio"]:checked {
+  background-color: white;
+}
