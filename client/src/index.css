@@ -7,11 +7,11 @@
 [data-theme="light"] {
   --bg-color: #eff9da;
   --text-color: #232323;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 [data-theme="dark"] {
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   --bg-color:#232323;
   --text-color:#eff9da;
 }
