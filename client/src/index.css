@@ -30,7 +30,7 @@ body{
 }
 
 .main-page{
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -101,4 +101,128 @@ nav > img:nth-child(2) {
   gap: 2rem;
   width: 30%;
   margin-inline: auto;
+}
+
+/**
+* Project 1
+*/
+
+.project1-div{
+  margin-inline: auto;
+  width: 90%;
+  background-color: white;
+  display: flex;
+}
+
+.project1-div > img {
+  width: 40%;
+}
+
+.form-div-card{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div-card h5 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  color: #232323;
+}
+
+.form-div-card input {
+  border: 1px solid rgba(128, 128, 128, 0.484);
+  padding: 0.5rem;
+  color: rgb(128, 128, 128);
+  border-radius: 5px;
+  width: calc(100% - 1.1rem);
+  font-family: 'Lexend Peta', sans-serif;
+  font-size: 0.7rem;
+}
+
+.form-div-card form {
+  /* background-color: red; */
+  width: 60%;
+}
+
+.form-div-card form>button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-family: 'Lexend Peta', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #21092f;
+}
+
+.exp-date-card-cvc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-date-card-cvc input {
+  width: 4rem;
+}
+
+.exp-date-card-cvc > label:nth-child(1) > input {
+  margin-right: 0.5rem;
+}
+
+.cards-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 40%;
+  gap: 1rem;
+  /* height: 100%; */
+  margin-left: 5%;
+  margin-top: 15%;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.cards-div  img {
+  width: 20rem;
+}
+
+.card-div-back > img {
+  margin-left: 2rem;
+}
+
+.card-div-front > div{
+  position: absolute;
+  top: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-div-front > div > h5 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding-left: 1rem;
+}
+
+.name-date-front-card {
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-between;
+  width: 18rem;
+  padding-left: 1rem;
+}
+
+.card-div-back > div{
+  position: absolute;
+  color: white;
+  left: 78%;
+  top: 15.6rem;
+  letter-spacing: 1px;
 }
