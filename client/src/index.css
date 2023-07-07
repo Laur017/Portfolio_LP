@@ -426,3 +426,130 @@ nav > img:nth-child(2) {
 .pr2-crew-text input[type="radio"]:checked {
   background-color: white;
 }
+
+/*
+* Project 3 Page
+*/
+
+.pr3-main-div{
+  background-color: #f1f5fe;
+  width: 90%;
+  margin-inline: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.pr3-main-text {
+  text-align: center;
+  color: #293356;
+}
+
+.pr3-card {
+  background-color: white;
+  width: 35rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  color: #858fad;
+}
+
+.pr3-card-first-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pr3-card-billing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.pr3-card-start-trial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bdccff;
+}
+
+.pr3-card-start-trial > button {
+  background-color: #293356;
+  color: #bdccff;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.pr3-card-start-trial > button:hover {
+  color: white;
+}
+
+.pr3-card-start-ben > h6 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pr3-card-billing>h6:nth-child(4){
+  background-color: #feece7;
+  padding: 0.2rem 0.5rem;
+  color: #ff8c66;
+  border-radius: 1rem;
+}
+
+.pr3-card-billing > img {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.pr3-card-first-text > h4:nth-child(2) > span {
+  color: #293356;
+  font-size: 2rem;
+}
+
+.pr3-card > input {
+  appearance: none; 
+  width: 100%; 
+  background: #bdccff;
+  border-radius: 1rem;
+  height: 0.5rem;
+  cursor: pointer;
+  
+}
+
+.pr3-card > input::-webkit-slider-thumb{
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #a5f3eb;
+  border-radius: 50%;
+  border: none;
+}
+
+.pr3-card > input::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #a5f3eb;
+  border-radius: 50%;
+  border: none;
+}
+
+.pr3-card > input::-moz-range-thumb:hover {
+  background: #91d6cf;
+}
+
+.pr3-card > input::-webkit-slider-runnable-track{
+  background-color: #a5f3eb;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.pr3-card > input::-moz-range-progress {
+  background-color: #a5f3eb;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
