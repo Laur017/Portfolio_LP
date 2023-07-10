@@ -867,6 +867,10 @@ nav > h4 {
   color: gray;
 }
 
+.pr6-right > h5 {
+  color: #fc7d18;
+}
+
 .pr6-taiat {
   text-decoration-line: line-through;
 }
