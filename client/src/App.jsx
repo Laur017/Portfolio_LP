@@ -7,6 +7,7 @@ import Project2 from './components/2ndProject/Project2'
 import Project3 from './components/3rdProject/Project3'
 import Project4 from './components/4thProject/Project4'
 import Project5 from './components/5thProject/Project5'
+import Project6 from './components/6thProject/Project6'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/project3' element={<Project3 />} />
         <Route path='/project4' element={<Project4 />} />
         <Route path='/project5' element={<Project5 />} />
+        <Route path='/project6' element={<Project6 />} />
       </Routes>
    </div>
   )
