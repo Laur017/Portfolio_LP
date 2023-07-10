@@ -553,3 +553,60 @@ nav > img:nth-child(2) {
   height: 0.5rem;
   border-radius: 1rem;
 }
+
+/*
+* Project 4
+*/
+
+.pr4-main-div{
+  background-color: white;
+  color: #232323;
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 2rem 2rem 10rem 2rem;
+  margin-inline: auto;
+}
+
+.pr4-main-div>div:nth-child(1){
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.468);
+  padding-bottom: 1rem;
+}
+
+.pr4-main-div>div:nth-child(1) input{
+  font-size: 1.5rem;
+  width: 5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.468);
+}
+
+.pr4-main-div h5 {
+  margin-bottom: 0.3rem;
+}
+
+
+
+.pr4-main-div img{
+  background-color: #844ef9;
+  border-radius: 50px;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.pr4-main-div img:hover{
+  background-color: #6d2aff;
+}
+
+.pr4-main-div>div:nth-child(2){
+  font-size: 2rem;
+}
+
+.pr4-main-div span{
+  color: #844ef9;
+}
