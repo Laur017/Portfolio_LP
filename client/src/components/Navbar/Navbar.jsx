@@ -16,7 +16,10 @@ export default function Navbar() {
 
   return (
     <nav>
-        <img src={!dark ? DarkLogo : LightLogo} onClick={()=> navigate('/')}/>
+        <h4 onClick={()=> navigate('/')}>home </h4>
+        <h4>about me</h4>
+        <h4 onClick={() => navigate('/projects')}>portfolio</h4>
+        {/* <img src={!dark ? DarkLogo : LightLogo} onClick={()=> navigate('/')}/> */}
         <img src={!dark ? DarkMode : LightMode} onClick={()=>setDark(!dark)}/>
     </nav>
   )

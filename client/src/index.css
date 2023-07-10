@@ -50,21 +50,18 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 2rem;
+  width: 60%;
+  margin-inline: auto;
 }
 
-nav > img{
-  cursor: pointer;
-  
-}
-
-nav > img:nth-child(1) {
-  width: 3rem;
-  padding: 1rem;
-}
-
-nav > img:nth-child(2) {
+nav > img {
   width: 2rem;
-  margin-right: 2rem;
+  cursor: pointer;
+}
+
+nav > h4 {
+  cursor: pointer;
 }
 
 /*
@@ -73,10 +70,12 @@ nav > img:nth-child(2) {
 
 .home-div{
   display: flex;
-  flex-direction: column;
   align-items: center;
   letter-spacing: 2px;
   font-family: 'Lexend Peta', sans-serif;
+  gap: 2rem;
+  margin-inline: auto;
+  justify-content: center;
 }
 
 .home-div > button, .projects-div > button{
@@ -96,6 +95,100 @@ nav > img:nth-child(2) {
   color: var(--bg-color);
 }
 
+.home-div > img {
+  border-radius: 50%;
+  outline: 0.5rem solid var(--text-color);
+  transition: all 0.3s ease;
+  width: 30%;
+}
+
+.home-div h1>span{
+  background: -webkit-linear-gradient(#DEB0DF, #A16BFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.home-div h2>span{
+   color: #16a5e1;
+}
+
+.home-mail-part {
+  display: flex;
+  align-items: center;
+}
+
+.home-mail-part > img {
+  width: 2rem;
+}
+
+.home-social-part {
+  display: flex;
+  gap: 2rem;
+  width: 20rem;
+  height: 5rem;
+}
+
+.insta-logo{
+  width: 3rem;
+  background-color: var(--text-color);
+  -webkit-mask: url('./components/Home/img/icons8-instagram.svg') no-repeat center;
+  mask: url('./components/Home/img/icons8-instagram.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.insta-logo:hover{
+  background: linear-gradient(33deg, #E13680, #A43AB2);
+  transition: all 0.3s ease-in;
+}
+
+.github-logo{
+  width: 3rem;
+  background-color: var(--text-color);
+  -webkit-mask: url('./components/Home/img/icons8-github.svg') no-repeat center;
+  mask: url('./components/Home/img/icons8-github.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.github-logo:hover{
+  background-color: #323B42;
+  transition: all 0.3s ease-in;
+}
+
+.linkedin-logo{
+  width: 3rem;
+  background-color: var(--text-color);
+  -webkit-mask: url('./components/Home/img/icons8-linkedin.svg') no-repeat center;
+  mask: url('./components/Home/img/icons8-linkedin.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.linkedin-logo:hover{
+  background-color: #5583ee;
+  transition: all 0.3s ease-in;
+}
+
+.mail-logo{
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--text-color);
+  -webkit-mask: url('./components/Home/img/mail.svg') no-repeat center;
+  mask: url('./components/Home/img/mail.svg') no-repeat center;
+}
+
+.home-social-part a{
+  width: 2.5rem;
+  background-color: var(--text-color);
+  -webkit-mask: url('./components/Home/img/cv.svg') no-repeat center;
+  mask: url('./components/Home/img/cv.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.home-social-part a:hover{
+  background-color: rgb(0, 152, 0);
+  transition: all 0.3s ease-in;
+}
+
+
 /*
 * Projects Page
 */
@@ -104,7 +197,7 @@ nav > img:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  width: 30%;
+  width: 35%;
   margin-inline: auto;
 }
 
