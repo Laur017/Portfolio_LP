@@ -5,10 +5,12 @@ import Photo1 from './img/image-product-1.jpg'
 import Photo2 from './img/image-product-2.jpg'
 import Photo3 from './img/image-product-3.jpg'
 import Photo4 from './img/image-product-4.jpg'
+import Pr6Modla from './Pr6Modla'
 
 export default function Project6() {
     const [counter,setCounter] = useState<number>(0)
     const [imageNum, setImageNum] = useState<number>(1)
+    const [popup, setPopup] = useState<boolean>(false)
 
     const handleCounter = (aux) => {
         aux === 1 ?
@@ -16,6 +18,10 @@ export default function Project6() {
                 setCounter(counter - 1) :
                 setCounter(0):
             setCounter(counter + 1)
+    }
+
+    const onClose = () => {
+        setPopup(false)
     }
 
   return (
@@ -37,7 +43,7 @@ export default function Project6() {
 
         <div className="pr6-content">
             <div className="pr6-left">
-                <img src={imageNum === 1 ? Photo1 : imageNum === 2 ? Photo2 : imageNum === 3 ? Photo3 : Photo4} />
+                <img src={imageNum === 1 ? Photo1 : imageNum === 2 ? Photo2 : imageNum === 3 ? Photo3 : Photo4} onClick={()=>setPopup(true)}/>
                 <div className="pr6-carrousel">
                     <img src={Photo1} onClick={()=>setImageNum(1)} className={imageNum === 1 ? 'pr6-active' : ''}/>
                     <img src={Photo2} onClick={()=>setImageNum(2)} className={imageNum === 2 ? 'pr6-active' : ''}/>
@@ -67,6 +73,18 @@ export default function Project6() {
                 </div>
             </div>
         </div>
+
+        <Pr6Modla open={popup} onClose={onClose}>
+        <div className="pr6-left-modal">
+                <img src={imageNum === 1 ? Photo1 : imageNum === 2 ? Photo2 : imageNum === 3 ? Photo3 : Photo4} onClick={()=>setPopup(true)}/>
+                <div className="pr6-carrousel">
+                    <img src={Photo1} onClick={()=>setImageNum(1)} className={imageNum === 1 ? 'pr6-active' : ''}/>
+                    <img src={Photo2} onClick={()=>setImageNum(2)} className={imageNum === 2 ? 'pr6-active' : ''}/>
+                    <img src={Photo3} onClick={()=>setImageNum(3)} className={imageNum === 3 ? 'pr6-active' : ''}/>
+                    <img src={Photo4} onClick={()=>setImageNum(4)} className={imageNum === 4 ? 'pr6-active' : ''}/>
+                </div>
+            </div>
+        </Pr6Modla>
 
     </div>
   )

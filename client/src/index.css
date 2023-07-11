@@ -856,10 +856,10 @@ nav > h4 {
 }
 
 .pr6-right{
-  /* background-color: #232323; */
   width: 50%;
   display: flex;
   flex-direction: column;
+  color: #232323;
 }
 
 .pr6-right > p {
@@ -933,4 +933,43 @@ nav > h4 {
 .pr6-active {
   opacity: 0.5;
   outline: 3px solid rgba(252, 125, 24, 1);
+}
+
+.pr6-modal{
+    position: fixed;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.pr6-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.pr6-left-modal {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pr6-left-modal > img {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.pr6-modal > button {
+  background: var(--transparent-color);
+  border: none;
+  color: #fc7d18;
+  position: relative;
+  left: 90%;
 }
