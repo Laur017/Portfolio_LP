@@ -1,16 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Cart from './shopping-cart.png'
 import Image from '../Home/img/tip_buletin.png'
 import Photo1 from './img/image-product-1.jpg'
 import Photo2 from './img/image-product-2.jpg'
 import Photo3 from './img/image-product-3.jpg'
 import Photo4 from './img/image-product-4.jpg'
+import Delete from './img/delete.png'
 import Pr6Modla from './Pr6Modla'
+import Pr6Cart from './Pr6Cart'
 
 export default function Project6() {
     const [counter,setCounter] = useState<number>(0)
     const [imageNum, setImageNum] = useState<number>(1)
     const [popup, setPopup] = useState<boolean>(false)
+    const [cartopen, setCartopen] = useState<boolean>(false)
+    const [cart, setCart] = useState<any>([])
+    const [total, setTotal] = useState<number>(0)
 
     const handleCounter = (aux) => {
         aux === 1 ?
@@ -20,8 +25,27 @@ export default function Project6() {
             setCounter(counter + 1)
     }
 
+    useEffect(()=>{
+        setTotal(cart.length)
+    },[cart])
+
     const onClose = () => {
         setPopup(false)
+    }
+
+    const handleAddToCart = () => {
+        setCart(prev => [...prev, {
+            name:"Fall Limited Edition Sneakers",
+            price:'125.00',
+            quantity:counter
+        }])
+    }
+
+    const handleDelete = (indx) => {
+        const items = cart
+        const i = indx
+        const filteredItems = items.slice(0, i).concat(items.slice(i + 1, items.length))
+        setCart(filteredItems)
     }
 
   return (
@@ -36,8 +60,9 @@ export default function Project6() {
                 <h5>Contact</h5>
             </div>
             <div className="pr6-nav-right">
-                <img src={Cart} />
-                <img src={Image} />
+                <img src={Cart} onClick={()=>setCartopen(!cartopen)}/>
+                {total > 0 && <h6>{total}</h6>}
+                <img src={Image} className='pr6-nav-rigt-me'/>
             </div>
         </div>
 
@@ -67,7 +92,7 @@ export default function Project6() {
                         <h3>{counter}</h3>
                         <button onClick={()=>handleCounter(2)}>+</button>
                     </div>
-                    <button>
+                    <button onClick={handleAddToCart}>
                         Add to cart
                     </button>
                 </div>
@@ -85,6 +110,23 @@ export default function Project6() {
                 </div>
             </div>
         </Pr6Modla>
+        <Pr6Cart open={cartopen}>
+            {cart.length > 0? 
+            <>
+            {cart.map((i,indx)=><div className='pr6-cart-content'>
+                <img src={Photo1} />
+                <div>
+                    <h6>{i.name}</h6>
+                    <h6>${i.price} x {i.quantity} <span>${parseFloat(i.price) * i.quantity}</span></h6>
+                </div>
+                <img src={Delete} onClick={()=>handleDelete(indx)}/>
+            </div>)}
+            <button>Checkout</button>
+            </>
+            :
+            <h5>Your cart is empty.</h5>
+            }
+        </Pr6Cart>
 
     </div>
   )
