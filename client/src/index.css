@@ -2,6 +2,13 @@
 
 :root {
   --transparent-color: rgba(0,0,0,0);
+  --calc-theme:#dce4ea;
+  --calc-background:#3b4664;
+  --calc-numbers:#535661;
+  --calc-buttons-one:#637298;
+  --calc-button-equal: #d13f30;
+  --calc-display:#191f32;
+  --calc-display2:#191f327f;
 }
 
 [data-theme="light"] {
@@ -1074,4 +1081,111 @@ nav > h4 {
 
 .pr7-main-div h5 {
   color: #52ffaa;
+}
+
+/*
+* Project 8 Page
+*/
+
+.pr8-second {
+  --calc-theme:#2a2929;
+  --calc-background:#e6e6e6;
+  --calc-numbers:#422d11;
+  --calc-buttons-one:#367e86;
+  --calc-button-equal: #ca5603;
+  --calc-display:#ededed;
+  --calc-display2:#d0cccb;
+}
+
+.pr8-main-div {
+  margin-inline: auto;
+  background: var(--calc-background);
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  padding: 1rem;
+  gap: 1rem;
+  color: var(--calc-theme);
+}
+
+.pr8-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pr8-top div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pr8-top h5 {
+  margin: 0;
+}
+
+.pr8-top span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr8-top img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.pr8-mid {
+  background-color: var(--calc-display);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pr8-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 1rem;
+  background-color: var(--calc-display2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.pr8-bottom button:last-child,
+.pr8-bottom button:nth-last-child(2) {
+  grid-column: span 2;
+  width: 13.5rem;
+}
+
+.pr8-bottom button {
+  background-color: white;
+  border: none;
+  /* padding: 1rem; */
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 6rem;
+  border-bottom: 3px solid gray;
+}
+
+.pr8-col1 {
+  background-color: var(--calc-buttons-one) !important;
+  color: white ;
+  font-size: 1.4rem !important;
+  padding: 0.4rem;
+}
+
+.pr8-col2 {
+  background-color: var(--calc-button-equal) !important;
+  color: white;
+  font-size: 1.4rem !important;
+  padding: 0.4rem;
+}
+
+
+
+.pr8-bottom button:hover {
+  border: none;
 }
