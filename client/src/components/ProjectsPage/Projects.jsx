@@ -14,6 +14,8 @@ export default function Projects() {
         <button onClick={()=> navigate('/project6')}>Project 6</button>
         <button onClick={()=> navigate('/project7')}>Project 7</button>
         <button onClick={()=> navigate('/project8')}>Project 8</button>
+        <button onClick={()=> navigate('/project9')}>Project 9</button>
+        <button onClick={()=> navigate('/project10')}>Project 10</button>
     </div>
   )
 }

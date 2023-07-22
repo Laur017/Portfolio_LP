@@ -1184,8 +1184,105 @@ nav > h4 {
   padding: 0.4rem;
 }
 
-
-
 .pr8-bottom button:hover {
   border: none;
+}
+
+/*
+* Project 9 Page
+*/
+
+.pr9-main-div{
+  background-color: #222e37;
+  width: 100%;
+}
+
+.pr9-nav {
+  background-color: #2b3740;
+  color: white;
+  margin: 0;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.pr9-nav h3 {
+  margin: 0;
+}
+
+.pr9-search {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pr9-search img {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.pr9-search input {
+  background-color: #2b3740;
+  color: white;
+  border: none;
+  padding: 1rem;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+}
+
+.pr9-search > div {
+  background-color: #2b3740;
+  border-radius: 0.5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 2rem;
+  gap: 0.5rem;
+}
+
+.pr9-search select {
+  letter-spacing: 1px;
+  width: 10rem;
+  padding-left: 1rem;
+  background-color: #2b3740;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.pr9-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 3rem;
+  gap:2rem;
+}
+
+.pr9-results img {
+  /* width: 14rem; */
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pr9-card {
+  background-color: #2b3740;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pr9-card h6 {
+  margin: 0.5rem 1rem;
+}
+
+.pr9-card h5 {
+  margin-left: 1rem;
+}
+
+.pr9-card:hover{
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
