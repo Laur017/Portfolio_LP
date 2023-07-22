@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import Poza from './img/tip_buletin.png'
 import Curriculum from './Popa_Laurentiu_CV.pdf'
-
+import HomeModels from './HomeModels'
 export default function Home() {
 
   const goToSocial = (aux) => {
@@ -16,7 +17,10 @@ export default function Home() {
 
   return (
     <div className='home-div'>
-       <img src={Poza} />
+       {/* <img src={Poza} /> */}
+      <div className="home-models">
+        <HomeModels />
+      </div>
        <div className="home-right-part">
         <h1>Hi, I'm <span>Laurentiu</span></h1>
         <h2><span>React</span> Developer</h2>
@@ -36,6 +40,13 @@ export default function Home() {
           ></a>
         </div>
         </div>
-    </div>
+        </div>
+    // <div className="home-div">
+    //   <h1>Hi, I'm Laurentiu</h1>
+    //   <h4>I Elevate User Journeys through React Development.</h4>
+    //   <div className="home-models">
+    //   <HomeModels />
+    //   </div>
+    // </div>
   )
 }

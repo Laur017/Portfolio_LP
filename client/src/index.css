@@ -83,6 +83,13 @@ nav > h4 {
   gap: 2rem;
   margin-inline: auto;
   justify-content: center;
+  /* flex-direction: column; */
+}
+
+.home-models {
+  /* background-color: grey; */
+  height: 20rem;
+  width: 50%;
 }
 
 .home-div > button, .projects-div > button{
